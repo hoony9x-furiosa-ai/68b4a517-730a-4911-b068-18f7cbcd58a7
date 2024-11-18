@@ -5,16 +5,17 @@ import "github.com/hoony9x-furiosa-ai/68b4a517-730a-4911-b068-18f7cbcd58a7/pkg/s
 // Arch represents NPU architecture.
 type Arch uint32
 
-const (
-	// ArchWarboy represents Warboy architecture.
-	ArchWarboy = Arch(binding.FuriosaSmiArchWarboy)
-	// ArchRngd represents RNGD architecture.
-	ArchRngd = Arch(binding.FuriosaSmiArchRngd)
-	// ArchRngdMax represents RNGD-Max architecture.
-	ArchRngdMax = Arch(binding.FuriosaSmiArchRngdMax)
-	// ArchRngdS represents RNGD-S architecture.
-	ArchRngdS = Arch(binding.FuriosaSmiArchRngdS)
-)
+// ArchWarboy represents Warboy architecture.
+const ArchWarboy = Arch(binding.FuriosaSmiArchWarboy)
+
+// ArchRngd represents RNGD architecture.
+const ArchRngd = Arch(binding.FuriosaSmiArchRngd)
+
+// ArchRngdMax represents RNGD-Max architecture.
+const ArchRngdMax = Arch(binding.FuriosaSmiArchRngdMax)
+
+// ArchRngdS represents RNGD-S architecture.
+const ArchRngdS = Arch(binding.FuriosaSmiArchRngdS)
 
 func (a Arch) ToString() string {
 	switch a {
