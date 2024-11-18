@@ -6,7 +6,7 @@ import (
 	"github.com/hoony9x-furiosa-ai/68b4a517-730a-4911-b068-18f7cbcd58a7/pkg/smi/binding"
 )
 
-func ToError(code binding.FuriosaSmiReturnCode) error {
+func toError(code binding.FuriosaSmiReturnCode) error {
 	switch code {
 	case binding.FuriosaSmiReturnCodeOk:
 		return nil
